@@ -9,6 +9,15 @@ Note: If the number is a multiple of both 3 and 5, only count it once.
 
 // TODO add your code here
 
+function sum(number) {
+    let total = 0
+    for (let i = 0; i < number; i++) {
+        if (i % 3 === 0 || i % 5 === 0) {
+            total +=i 
+        }
+    } return total
+}
+
 // Begin of tests
 const assert = require("assert");
 
@@ -20,4 +29,4 @@ assert.strictEqual(sum(100), 2318);
 
 // End of tests
 
-console.log("🎉");
+console.log(sum(100));

@@ -14,8 +14,17 @@ You can't use Math.min(), the goal is to recreate this function!
 
 // TODO add your code here
 
+function min(nb1, nb2) {
+    if (typeof nb1 !== "number" || typeof nb2 !== "number"){
+        return NaN
+
+        // Utiliser l'opérateur ternaire ???
+    } else return a < b ? a : b
+    }
+
 // Begin of tests
 const assert = require("assert");
+const { type } = require("os");
 
 assert.strictEqual(typeof min, "function");
 assert.strictEqual(min.length, 2);
