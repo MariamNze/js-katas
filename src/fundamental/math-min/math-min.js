@@ -16,10 +16,10 @@ You can't use Math.min(), the goal is to recreate this function!
 
 function min(nb1, nb2) {
     if (typeof nb1 !== "number" || typeof nb2 !== "number"){
-        return NaN
+        return NaN;
 
         // Utiliser l'opérateur ternaire ???
-    } else return a < b ? a : b
+    } else return nb1 < nb2 ? nb1 : nb2;
     }
 
 // Begin of tests
@@ -36,3 +36,10 @@ assert.strictEqual(min(), NaN);
 // End of tests
 
 console.log("🎉");
+
+console.log(min(0, 0), 0);
+console.log(min(0, 1), 0);
+console.log(min(-1, 0), -1);
+console.log(min("tacos", 0), NaN);
+console.log(min(), NaN);
+

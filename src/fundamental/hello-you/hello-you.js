@@ -8,15 +8,15 @@ If the argument is empty, null or undefined, return "Hello World":
 */
 
 // TODO add your code here
-const name = "Mariam"
 
 function sayHello(name) {
     if (!name) {
-        return "Hello World"
+        return "Hello World";
     }else {
-        return `Hello ${name}`
+        return `Hello ${name}`;
     }
 }
+
 
 // Begin of tests
 const assert = require("assert");
@@ -30,4 +30,10 @@ assert.strictEqual(sayHello(null), "Hello World");
 assert.strictEqual(sayHello(), "Hello World");
 // End of tests
 
-console.log(sayHello(name));
+console.log("🎉");
+
+console.log(sayHello("Barbara"));
+console.log(sayHello("Jean-Michel"));
+console.log(sayHello(""));
+console.log(sayHello(null));
+console.log(sayHello());

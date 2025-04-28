@@ -8,15 +8,16 @@ Create a function `fizzBuzz` which takes a number as parameter, and returns:
 */
 
 // TODO add your code here
+
 function fizzBuzz(number) {
-    if (number % 3 === 0) {
-        return "Fizz"
+    if (number % 3 === 0 && number % 5 === 0) {
+        return "FizzBuzz";
+    } else if (number % 3 === 0) {
+        return "Fizz";
     } else if (number % 5 === 0) {
-        return "Buzz"
-    } else if (number % 3 === 0 && number % 5) {
-        return "FizzBuzz"
+        return "Buzz";
     } else {
-        return number.toString()
+        return number.toString();
     }
 }
 
@@ -35,4 +36,14 @@ assert.strictEqual(fizzBuzz(7), "7");
 assert.strictEqual(fizzBuzz(13), "13");
 // End of tests
 
+console.log("🎉");
+
+console.log(fizzBuzz(3));
 console.log(fizzBuzz(9));
+console.log(fizzBuzz(5));
+console.log(fizzBuzz(10));
+console.log(fizzBuzz(15));
+console.log(fizzBuzz(30));
+console.log(fizzBuzz(7));
+console.log(fizzBuzz(13));
+
