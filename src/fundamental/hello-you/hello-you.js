@@ -32,8 +32,3 @@ assert.strictEqual(sayHello(), "Hello World");
 
 console.log("🎉");
 
-console.log(sayHello("Barbara"));
-console.log(sayHello("Jean-Michel"));
-console.log(sayHello(""));
-console.log(sayHello(null));
-console.log(sayHello());

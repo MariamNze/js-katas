@@ -38,12 +38,4 @@ assert.strictEqual(fizzBuzz(13), "13");
 
 console.log("🎉");
 
-console.log(fizzBuzz(3));
-console.log(fizzBuzz(9));
-console.log(fizzBuzz(5));
-console.log(fizzBuzz(10));
-console.log(fizzBuzz(15));
-console.log(fizzBuzz(30));
-console.log(fizzBuzz(7));
-console.log(fizzBuzz(13));
 

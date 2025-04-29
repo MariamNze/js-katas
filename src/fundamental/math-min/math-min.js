@@ -20,7 +20,7 @@ function min(nb1, nb2) {
 
         // Utiliser l'opérateur ternaire ???
     } else return nb1 < nb2 ? nb1 : nb2;
-    }
+}
 
 // Begin of tests
 const assert = require("assert");
@@ -36,10 +36,3 @@ assert.strictEqual(min(), NaN);
 // End of tests
 
 console.log("🎉");
-
-console.log(min(0, 0), 0);
-console.log(min(0, 1), 0);
-console.log(min(-1, 0), -1);
-console.log(min("tacos", 0), NaN);
-console.log(min(), NaN);
-

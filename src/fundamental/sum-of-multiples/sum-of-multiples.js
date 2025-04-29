@@ -31,6 +31,3 @@ assert.strictEqual(sum(100), 2318);
 
 console.log("🎉");
 
-console.log(sum(10));
-console.log(sum(42));
-console.log(sum(100));
