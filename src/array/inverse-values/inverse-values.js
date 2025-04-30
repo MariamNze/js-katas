@@ -16,4 +16,11 @@ Don't mutate the parameter.
 
 // TODO add your code here
 
+function inverse(arrayNumbers) {
+    if (!arrayNumbers || arrayNumbers.length === 0) {
+        return [];
+    } 
+    return arrayNumbers.map(number => -number);
+}
+
 module.exports = inverse;
