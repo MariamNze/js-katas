@@ -14,16 +14,16 @@ You can't use the function Math.min()
 
 // TODO add your code here
 
-function min(arr) {
-    if (!arr || arr.length === 0) {
+function min(number) {
+    if (!number || number.length === 0) {
       return null;
     }
   
-    let minValue = arr[0];
+    let minValue = number[0];
   
-    for (let i = 1; i < arr.length; i++) {
-      if (arr[i] < minValue) {
-        minValue = arr[i];
+    for (let i = 1; i < number.length; i++) {
+      if (number[i] < minValue) {
+        minValue = number[i];
       }
     } return minValue;
   }
