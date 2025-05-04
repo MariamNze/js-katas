@@ -9,3 +9,24 @@ test("isPalindrome as one parameter", () => {
 });
 
 // TODO add your tests here
+
+test("'rotor' returns true", () => {
+  expect(isPalindrome("rotor")).toBe(true);
+});
+
+test("'tacos' returns false", () => {
+  expect(isPalindrome("tacos")).toBe(false);
+});
+
+test("'Kayak' returns true", () => {
+  expect(isPalindrome("Kayak")).toBe(true);
+});
+
+test("null string returns true", () => {
+  expect(isPalindrome(null)).toBe(true);
+});
+
+test("empty string returns true", () => {
+  expect(isPalindrome("")).toBe(true);
+});
+

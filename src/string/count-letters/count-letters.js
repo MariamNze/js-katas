@@ -18,4 +18,23 @@ Add you own tests.
 
 // TODO add your code here
 
+function countChar(string, character) {
+    if (string === null || character === null) {
+        return -1;
+    }
+    if (typeof character !== "string" || character.length !== 1) {
+        return -1;
+    }
+    if (typeof string !== "string") {
+        return -1;
+    }
+
+    let count = 0;
+    for (let i = 0; i < string.length; i++) {
+        if (string[i] === character) {
+            count++;
+        }
+    } return count;
+}
+
 module.exports = countChar;

@@ -14,4 +14,11 @@ Add you own tests.
 
 // TODO add your code here
 
+function abbreviate(str) {
+    return str
+    .split(' ')
+    .map(word => word.charAt(0).toUpperCase())
+    .join('.');
+}
+
 module.exports = abbreviate;

@@ -19,4 +19,17 @@ Add you own tests.
 
 // TODO add your code here
 
+function isPalindrome(word) {
+    if (word === null || word === "") {
+        return true;
+    }
+
+    const variable = word.toLowerCase();
+    const reversed = variable.split("").reverse().join("");
+    if (variable === reversed) {
+        return true;
+    } return false
+
+}
+
 module.exports = isPalindrome;
