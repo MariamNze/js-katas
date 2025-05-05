@@ -12,6 +12,13 @@ Bonus : do not use a loop
 
 // TODO add your code here
 
+function uniq(arr) {
+  return arr.filter((value, index, arr) => index === 0 || value !== arr[index -1]);
+}
+
+console.log(uniq);
+
+
 // Begin of tests
 const assert = require("assert");
 
