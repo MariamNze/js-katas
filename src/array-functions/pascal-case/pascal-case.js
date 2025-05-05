@@ -13,8 +13,18 @@ Don't mutate the parameter.
 
 // TODO add your code here
 
+function pascalCase(string) {
+  return string
+  .split(" ")
+  .map((word) => word[0].toUpperCase() + word.slice(1).toLowerCase())
+  .join("");
+}
+
+console.log(pascalCase);
+
 // Begin of tests
 const assert = require("assert");
+const { stringify } = require("querystring");
 
 assert.strictEqual(typeof pascalCase, "function");
 assert.strictEqual(pascalCase.length, 1);

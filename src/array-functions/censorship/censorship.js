@@ -28,6 +28,19 @@ Don't mutate the parameter.
 
 // TODO add your code here
 
+function censor(sentences, forbiddenWord) {
+  if (!forbiddenWord) {
+    return sentences;
+  }
+
+  const stars = '*'.repeat(forbiddenWord.length);
+  const regex = new RegExp("\\b" + forbiddenWord + "\\b", "g");
+
+  return sentences.map((sentence) => sentence.replace(regex, stars));
+}
+
+console.log(censor)
+
 // Begin of tests
 const assert = require("assert");
 
